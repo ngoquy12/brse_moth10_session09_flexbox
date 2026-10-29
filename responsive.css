@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100px;
+}
+
+/* Kích thước của máy tính để bàn */
+@media screen and (min-width: 1200px) {
+  .container {
+    background-color: aqua;
+  }
+
+  .heading-1 {
+    font-size: 40px;
+  }
+}
+
+/* Kích thước của laptop */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+    background-color: red;
+  }
+
+  .heading-1 {
+    font-size: 36px;
+  }
+}
+
+/* Kích thước của tablet theo chiều ngang */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    background-color: blue;
+  }
+
+  .heading-1 {
+    font-size: 32px;
+  }
+}
+
+/* Kích thước của tablet theo chiều dọc */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .container {
+    background-color: yellow;
+  }
+
+  .heading-1 {
+    font-size: 28px;
+  }
+}
+
+/* Kích thước của điện thoại di động */
+@media screen and (max-width: 480px) {
+  .container {
+    background-color: brown;
+  }
+
+  .heading-1 {
+    font-size: 16px;
+  }
+}
